@@ -1,4 +1,4 @@
-package com.intprep.tiktok.easy;
+package com.intprep.tiktok.medium;
 
 //@link - https://leetcode.com/problems/maximum-subarray/
 public class MaximumSubarray {
