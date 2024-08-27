@@ -1,5 +1,6 @@
 package com.intprep.tiktok.easy;
 
+//@link - https://leetcode.com/problems/reverse-linked-list/
 public class ReverseALinkedList {
     public ListNode reverseList(ListNode head) {
         if (head == null) return null;
