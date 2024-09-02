@@ -7,6 +7,7 @@ import java.util.PriorityQueue;
 
 //@link - https://leetcode.com/problems/smallest-string-with-swaps/
 //@check - https://www.youtube.com/watch?v=O3jr8HOpkUU
+//@tag - NO_IDEA
 public class SmallestStringWithSwap {
     public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
         /** Understood at a high level. But implementation is entirely @copypasta */
