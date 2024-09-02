@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
 //@check - https://www.youtube.com/watch?v=O3jr8HOpkUU
 public class SmallestStringWithSwap {
     public String smallestStringWithSwaps(String s, List<List<Integer>> pairs) {
-        /** Understood at a high level. But implmentation is entirely @copypasta */
+        /** Understood at a high level. But implementation is entirely @copypasta */
         char[] str = s.toCharArray();
 
         //<ParentID, All character that map to the same parent>
