@@ -14,7 +14,6 @@ public class CoinChange {
         return ans == Integer.MAX_VALUE ? -1: (int) ans;
     }
 
-
     private long revise(int[] coins, int curr, long amount, Map<String, Long> dp) {
         if (amount == 0) return 0;
         if (amount < 0) return Integer.MAX_VALUE;
@@ -28,17 +27,6 @@ public class CoinChange {
         dp.put(key, Math.min(chooseCurr, skipCurr));
         return dp.get(key);
     }
-
-
-
-
-
-
-
-
-
-
-
 
     private long coinchange(int[] coins, int amount, int curr, Map<String, Long> cache) {
         if (amount == 0) {
