@@ -8,6 +8,7 @@ public class PeakElement {
     }
 
     //TC: O(logn)
+    //@check - https://www.youtube.com/watch?v=cXxmbemS6XM&t=1427s&ab_channel=takeUforward
     private int binarySearch(int[] nums) {
         //edge cases.
 
