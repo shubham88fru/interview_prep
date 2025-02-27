@@ -62,3 +62,43 @@
     4. State design pattern:
        This pattern models different states of lockers and facilitates smooth transition
        between states, making it easier to manager and represent the lifecycle of a locker.
+
+# Actors:
+    1. Customer:
+        - Enter code
+        - Add product
+        - Remove product
+        - Delivery notification
+        - Submit return request
+        - Overdue notification
+
+    2. Delivery guy:
+        - Enter code
+        - Add product
+        - Remove product
+        - Return notification
+
+    3. System:
+        - Validate code
+        - Find locker
+        - lock/unlock door
+        - return notification
+        - generate code
+        - issue locker
+        - overdue notification
+        - delivery notification
+
+# Entities:
+    1. Item - each item of the order.
+    2. Order - 
+    3. Notification
+    4. Package and LockerPackage
+    5. Locker
+    6. LockerLocation
+    7. LockerService
+    8. Enums:
+        i. LockerStatus - CLOSED, BOOKED, AVAILABLE
+        ii. LockerSize - XSM, SM, MED, LG, XLG, XXLG
+
+# Class diagram:
+![Amazon Locker Service Class diagram](../../../../../resources/amazon_locker_class_diagram.png)
