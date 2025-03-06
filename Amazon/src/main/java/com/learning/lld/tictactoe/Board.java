@@ -3,11 +3,19 @@ package com.learning.lld.tictactoe;
 public class Board {
     private int size;
     private Cell[][] board;
-    int totalMoves = 0;
+    private int totalMoves = 0;
+    private int[] rowSum;
+    private int[] colSum;
+    private int fDiag;
+    private int bDiag;
 
     public Board(int size) {
         this.size = size;
         this.board = new Cell[size][size];
+        this.rowSum = new int[size];
+        this.colSum = new int[size];
+        this.fDiag = 0;
+        this.bDiag = 0;
         initializeBoard();
     }
 
@@ -101,6 +109,25 @@ public class Board {
         return rowMatch || columnMatch || diagonalMatch || antiDiagonalMatch;
     }
 
+    public boolean winnerO1(int row, int col, Player player) {
+        if (player.getSymbol() == Symbol.X) {
+            rowSum[row] += 1;
+            colSum[col] += 1;
+            if (row == col) fDiag += 1;
+            if (row == size - col - 1) bDiag += 1;
+        } else if (player.getSymbol() == Symbol.O) {
+            rowSum[row] -= 1;
+            colSum[col] -= 1;
+            if (row == col) fDiag -= 1;
+            if (row == size - col - 1) bDiag -= 1;
+        }
+
+        if (size == Math.abs(rowSum[row]) || size == Math.abs(colSum[col]) || size == Math.abs(fDiag) || size == Math.abs(bDiag)) {
+            return true;
+        }
+
+        return false;
+    }
 
     public void print() {
         for (int row = 0; row < size; row++) {
