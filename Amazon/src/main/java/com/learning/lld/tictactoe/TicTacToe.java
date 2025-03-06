@@ -30,7 +30,7 @@ public class TicTacToe {
             }
 
             board.print();
-            if (board.winner(i, j, players[player])) {
+            if (board.winnerOptimal(i, j, players[player])) {
                 break;
             }
 

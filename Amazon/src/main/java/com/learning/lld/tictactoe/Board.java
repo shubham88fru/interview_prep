@@ -54,17 +54,47 @@ public class Board {
             }
         }
 
-        for (int i = 0, j = 0; i < size; i++, j++) {
-            if (board[i][j].symbol == Symbol.DASH || board[i][j].symbol != player.getSymbol()) {
-                diagonalMatch = false;
-                break;
+        if (row == col) { //optimization - only makes sense to check the diagonal if row == col.
+            for (int i = 0, j = 0; i < size; i++, j++) {
+                if (board[i][j].symbol == Symbol.DASH || board[i][j].symbol != player.getSymbol()) {
+                    diagonalMatch = false;
+                    break;
+                }
             }
         }
 
+        if (row + col == size-1)
         for (int i = 0, j = size - 1; i < size; i++, j--) {
             if (board[i][j].symbol == Symbol.DASH || board[i][j].symbol != player.getSymbol()) {
                 antiDiagonalMatch = false;
                 break;
+            }
+        }
+
+        return rowMatch || columnMatch || diagonalMatch || antiDiagonalMatch;
+    }
+
+    public boolean winnerOptimal(int row, int col, Player player) {
+        boolean rowMatch = true;
+        boolean columnMatch = true;
+        boolean diagonalMatch = true;
+        boolean antiDiagonalMatch = true;
+
+        for (int i = 0; i < size; i++) {
+            if (board[row][i].symbol == Symbol.DASH || board[row][i].symbol != player.getSymbol()) {
+                rowMatch = false;
+            }
+
+            if (board[i][col].symbol == Symbol.DASH || board[i][col].symbol != player.getSymbol()) {
+                columnMatch = false;
+            }
+
+            if (board[i][i].symbol == Symbol.DASH || board[i][i].symbol != player.getSymbol()) {
+                diagonalMatch = false;
+            }
+
+            if (board[i][size-i-1].symbol == Symbol.DASH || board[i][size-i-1].symbol != player.getSymbol()) {
+                antiDiagonalMatch = false;
             }
         }
 
