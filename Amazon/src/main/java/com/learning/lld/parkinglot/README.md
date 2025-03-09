@@ -6,4 +6,4 @@
 
 
 - issues:
-  - Mulitple enter and exit? is this handled by concurrency? check the lld from edctv.
+  - Multiple enter and exit? is this handled by concurrency? check the lld from edctv.
