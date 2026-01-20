@@ -1,0 +1,109 @@
+# MS Top LC
+
+1.	LC 1. Two sum
+      a.	Brute
+        i.	Check each pair -> O(nˆ2)
+      b.	Map -> O(n), O(n)
+
+2.	LC 5. Longest palindromic substring
+      a.	Brute
+         i.	Generate substring of all length starting from largest to smallest ->
+      b.	Top down
+         i.	Boolean array -> O(Nˆ2), O(Nˆ2)
+      c.	Bottom up
+         i.	Check palindrome for each sub (i..j) and keep caching the result for faster check for later subs ->
+
+3.	LC 11. Container with most water
+      a.	Brute
+         i.	Take each rod as left and find a right that gives max area -> O(nˆ2)
+      b.	Two pointer -> O(n)
+
+4.  LC 53. Maximum subarray
+      a.  Brute
+         i. Generate all subs (two loops) - O(nˆ2)
+      b.  Optimal
+         ii. Kadanes' algo one pass, keep track of max - O(n)
+
+5.  LC 2. Add two numbers
+      a. Brute
+        i. LL traversal, dummy node for ans -> O(n)
+
+6. LC 1475. Final Prices With a Special Discount in a Shop
+      a. Brute
+        i. For each, check the first smaller on right -> O(nˆ2)
+      b. Stack
+        i. Left to right or vice versa, using stack. -> O(n)
+
+7. LC 33. Search in rotated sorted array.
+     a. Brute
+        i. Linear search -> O(n)
+     b. Modified Binary search -> O(log(n))
+
+8. LC 75. Sort colors
+    a. Brute
+        i. Sort -> O(nlog(n))
+    b. 3 pass
+        i. Manually sort (using single for loop) each code (0, 1, 2) one by one. -> O(3N)
+    c. 2 pass
+        i. Iterate and store freq of 0, 1, and 2. Then Iterated and replace each el in array --> O(2N)
+    d. Dutch National Flag algo, 1 Pass
+        i. [0..low-1] --> 0
+           [low..mid-1] --> 1
+           [mid..high] --> unsorted
+           [high+1..n-1] --> 2
+
+9. LC 121. Best Time to Buy and Sell Stock
+    a. Brute.
+        i. Buy at each and then check best day to sell while keeping track of max. -> O(nˆ2)
+    b. Sliding window. -> O(n)
+    c. Buy at min and sell at max. Keep track of min and keep calculating max diff. -> O(n)
+
+10. LC 9. Palindrome number
+    a. Brute
+        i. Convert the number to string, reverse and then compare. -> O(n), O(n)
+    b. Math reverse using % and / -> O(n)
+
+11. LC 21. Merge two sorted lists
+    a. Brute
+        i. Store nodes in arraylist, sort array list and then link -> O(n+m + (n+m)log(n+m) + n + m), O(n+m)
+    b. Merge using third LL --> O(n+m), O(n+m)
+    c. Inplace merge -> O(n+m), O(1)
+
+12. LC 101. Symmetric tree
+    a. DFS -> O(n)
+
+13. LC 138. Copy List with Random Pointer
+    a. HashMap -> O(n)
+
+14. LC 146. LRU cache
+    a. HashMap and DLL -> O(1)
+
+15. LC 49. Group anagrams
+    a. Hashmap and freq array --> O(n*k)
+
+16. LC 56. Merge intervals
+    a. Sort and loop ->  O(nlog(n) + n + n)
+
+17. LC 73. Set Matrix Zeroes
+    a. Brute
+        i. Using a separate copy matrix --> O(m*n), O(m*n)
+    b. Two arrays/set to track rows/cols
+        i. Use 2 arrays/sets to track the rows and cols that
+           that need to be zero. --> O(m*n), O(m+n)
+    c. Space efficient soln
+        i. use first row and col to track which rows/cols
+           need to marked zero --> O(m*n), O(1)
+
+18. LC 93. Restore IP Addresses
+    a. Backtracking
+      i. Standard backtracking template --> O(MˆN) ???????
+
+19. LC 242. Valid anagram
+    a. 26 len array -> O(n)
+    b. hashmap (if lets say the string contains special chars/unicode) -> O(n), O(n)
+
+20. LC 424. Longest repeating character replacement.
+    a. Brute
+        i. generate all subs, in each sub, replace each char with a char of sub and see if
+            it can be done within k replacement to make all chars same --> O(nˆ2 +..)
+        ii. Sliding window -> O(n)
