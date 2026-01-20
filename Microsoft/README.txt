@@ -107,3 +107,13 @@
         i. generate all subs, in each sub, replace each char with a char of sub and see if
             it can be done within k replacement to make all chars same --> O(nˆ2 +..)
         ii. Sliding window -> O(n)
+
+21. LC 3. Longest substring without repeating chars
+    a. Brute.
+        i. Generate all subs, in each sub check if it doesn't repeat and record. -> O(nˆ2)
+    b. Sliding window -> O(n)
+
+22. LC 1797. Design authentication manager.
+    a. Brute
+        i. Using hashmap --> O(n) for get unexpired token call
+    b. LRU using DLL --> O(1) on avg ??
