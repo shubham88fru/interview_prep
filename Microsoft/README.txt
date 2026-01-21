@@ -117,3 +117,8 @@
     a. Brute
         i. Using hashmap --> O(n) for get unexpired token call
     b. LRU using DLL --> O(1) on avg ??
+
+23. LC 16. 3 Sum closest
+    a. Brute
+        i. Three nested for-loops --> O(nˆ3)
+    b. The optimal sort+3pointer approach of 3 sum problem -> O(nlog(n) + nˆ2)
