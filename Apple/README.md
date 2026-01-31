@@ -17,7 +17,7 @@
    2. **Sort, iterate and merge**
        1. Sort wrt start time, then iterate and merge. -> O(nlog(n) + n + n)
 
-4. **362. Design Hit Counter**
+4. **LC 362. Design Hit Counter**
    1. **Brute**
         1. Store hits in an array list and do linear search in getHits call
    2. **List and binary search**
@@ -25,3 +25,17 @@
    3. **Deque**
         1. TC: O(n), SC: O(n)
    4. Optimal ???
+
+5. **LC 53. Maximum Subarray**
+    1. **Brute**
+        1. All subarray and keep track of max -> O(nˆ2), O(1)
+    2. **Kadane's algo**
+        1. TC: O(n), SC: O(1)
+
+6. **189. Rotate Array**
+    1. **Brute**
+        1. rotate k times -> O(n*k), O(1)
+    2. **Better**
+        1. Use extra space to store rotated values and copyback -> TC: O(n), SC: O(n)
+    3. **Optimal**
+        1. reverse 0..n-1, then reverse 0..k-1, then reverse k..n-1 --> TC: O(~n), SC: O(1)
