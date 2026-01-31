@@ -39,3 +39,9 @@
         1. Use extra space to store rotated values and copyback -> TC: O(n), SC: O(n)
     3. **Optimal**
         1. reverse 0..n-1, then reverse 0..k-1, then reverse k..n-1 --> TC: O(~n), SC: O(1)
+
+7. **253. Meeting Rooms II**
+    1. **Two arrays - starts and end, sorting**
+        1. TC: O(n + nlog(n) + nlog(n) + n), SC: O(n + n)
+    2. **Heap** ??
+        1. TC: O(nlog(n) + nlog(n)), SC: O(n)
