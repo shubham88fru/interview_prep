@@ -83,3 +83,11 @@
         1. TC: O(n), SC: O(n)
     2. **Optimal - two pointer**
         1. TC: O(n), SC: O(1)
+
+14. **210. Course Schedule II**
+    1. **BFS/Kahn's algo/Toposort**
+        1. TC: O(V+E), SC: O(V+E) ??
+
+15. **207. Course Schedule**
+    1. **BFS/Kahn's algo/Toposort**
+        1. TC: O(V+E), SC: O(V+E) ??
