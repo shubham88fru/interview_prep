@@ -45,3 +45,9 @@
         1. TC: O(n + nlog(n) + nlog(n) + n), SC: O(n + n)
     2. **Heap** ??
         1. TC: O(nlog(n) + nlog(n)), SC: O(n)
+
+8. **206. Reverse Linked List**
+    1. **Iterative**
+        1. TC: O(n), SC: O(1)
+    2. **Recursive**
+        1. TC: O(n), SC: O(1)
