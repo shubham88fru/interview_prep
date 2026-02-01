@@ -71,3 +71,9 @@
         1. TC: O(N*log(N)) -> N is total num of nodes, SC: O(N)
     4. **Brute force merge 2 lists successively**
         1. TC: O(k*N) -> N is total num of nodes and K is num of lists, SC: O(1)
+
+12. **49. Group Anagrams**
+    1. **Optimal - Hashmap**
+        1. TC: O(k*n), SC: O(n*k)
+    2. **Brute - sort**
+        1. TC: O(k*n*log(n)), SC: O(n*k)
