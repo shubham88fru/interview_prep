@@ -77,3 +77,9 @@
         1. TC: O(k*n), SC: O(n*k)
     2. **Brute - sort**
         1. TC: O(k*n*log(n)), SC: O(n*k)
+
+13. **125. Valid Palindrome**
+    1. **Brute - Stringbuilder**
+        1. TC: O(n), SC: O(n)
+    2. **Optimal - two pointer**
+        1. TC: O(n), SC: O(1)
