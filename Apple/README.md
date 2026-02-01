@@ -51,3 +51,13 @@
         1. TC: O(n), SC: O(1)
     2. **Recursive**
         1. TC: O(n), SC: O(1)
+
+9. **347. Top K Frequent Elements**
+    1. **Map + TreeMap**
+        1. TC: O(nlog(n)), SC: O(n)
+    2. **Min Heap**
+        1. TC: O(nlog(k)), SC: O(n)
+
+10. **200. Number of Islands**
+    1. **BFS/DFS**
+        1. TC: O(m*n)), SC: O(1)
