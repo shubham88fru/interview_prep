@@ -91,3 +91,9 @@
 15. **207. Course Schedule**
     1. **BFS/Kahn's algo/Toposort**
         1. TC: O(V+E), SC: O(V+E) ??
+
+16. **981. Time Based Key-Value Store**
+    1. **Brute - linear search**
+        1. set - TC: O(1); get - TC: O(k) where k is length of timestamp list for the key.
+    2. **Optimal - binary search**
+        1. set - TC: O(1); get - TC: O(log(k)) where k is length of timestamp list for the key.
