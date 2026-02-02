@@ -113,3 +113,8 @@
        1. TC: O(nˆ2), SC: O(1)
     3. **Binary search** ??
         1. TC: O(nlog(n)), SC: O(n)
+
+20. **36. Valid Sudoku**
+    1. **3 Maps**
+        1. TC: O(Nˆ2), SC: O(Nˆ2)
+    2. Few more approaches in editorial. ??.
