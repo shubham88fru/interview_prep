@@ -97,3 +97,7 @@
         1. set - TC: O(1); get - TC: O(k) where k is length of timestamp list for the key.
     2. **Optimal - binary search**
         1. set - TC: O(1); get - TC: O(log(k)) where k is length of timestamp list for the key.
+
+17. **1047. Remove All Adjacent Duplicates In String**
+    1. **Optimal - StringBuffer/Stack**
+        1. TC: O(N), SC: O(N-D) where D is num of duplicate chars.
