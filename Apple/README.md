@@ -101,3 +101,7 @@
 17. **1047. Remove All Adjacent Duplicates In String**
     1. **Optimal - StringBuffer/Stack**
         1. TC: O(N), SC: O(N-D) where D is num of duplicate chars.
+
+18. **20. Valid Parentheses**
+    1. **Optimal - Stack**
+        1. TC: O(N), SC: O(N)
