@@ -105,3 +105,11 @@
 18. **20. Valid Parentheses**
     1. **Optimal - Stack**
         1. TC: O(N), SC: O(N)
+
+19. **713. Subarray Product Less Than K**
+    1. **Optimal - Sliding Window**
+        1. TC: O(N), SC: O(1)
+    2. **Brute - Generate all subarrays**
+       1. TC: O(nˆ2), SC: O(1)
+    3. **Binary search** ??
+        1. TC: O(nlog(n)), SC: O(n)
