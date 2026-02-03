@@ -122,3 +122,11 @@
 21. **54. Spiral Matrix**
     1. **Simulation**
         1. TC: O(N*M), SC: O(1)
+
+22. **121. Best Time to Buy and Sell Stock**
+    1. **Brute - check each pair**
+        1. TC: O(Nˆ2), SC: O(1)
+    2. **Optimal - check running**
+        1. TC: O(N), SC: O(1)
+    3. **DP - unnecessary**
+        1. TC: O(N), SC: (N) 
