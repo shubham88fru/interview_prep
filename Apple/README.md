@@ -118,3 +118,7 @@
     1. **3 Maps**
         1. TC: O(Nˆ2), SC: O(Nˆ2)
     2. Few more approaches in editorial. ??.
+
+21. **54. Spiral Matrix**
+    1. **Simulation**
+        1. TC: O(N*M), SC: O(1)
