@@ -138,3 +138,13 @@
         1. TC: O(N), SC: O(1)
     3. **Recursion/DP**
         1. TC: O(N), SC: (N) 
+
+24. **238. Product of Array Except Self**
+    1. **Brute - for each multiply the rest**
+        1. TC: O(nˆ2), SC: O(1)
+    2. **Noob - divide overall pdt by each. Not allowed as per q.**
+        1. TC: O(N), SC: O(1)
+    3. **Suboptimal - prefix and suffix array**
+        1. TC: O(N), SC: O(N)
+    4. **Optimal - without extra space**
+        1. TC: O(N), SC: (1) 
