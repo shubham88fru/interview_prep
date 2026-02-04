@@ -147,4 +147,13 @@
     3. **Suboptimal - prefix and suffix array**
         1. TC: O(N), SC: O(N)
     4. **Optimal - without extra space**
-        1. TC: O(N), SC: (1) 
+        1. TC: O(N), SC: (1)
+
+25. **1146. Snapshot Array**
+    1. **Brute - simulation, copy entire array on each call**
+        1. Map of snapid vs copy of array
+        2. TC: O(n*k) {n calls to snap, in each call, copy entire array of size k}, SC: O(n*k)
+    2. **Better - Map of snap vs map of index v/s val**
+        1. ??
+    3. **Optimal - treemap**
+        1. TC: O(nlog(n) + k), SC: O(n+k)
