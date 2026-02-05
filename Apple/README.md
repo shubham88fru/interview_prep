@@ -193,3 +193,9 @@
         1. Trie stores the words in compressed format because of same prefix matching.
         2. TC: O(M) when word doesn't have any dot. But TC: O(N*26ˆM) in worst case when all chars in word are dot.
         3. SC: O(M) ??
+
+31. **295. Find Median from Data Stream**
+    1. **Brute - Sort each time and find middle**
+        1. TC: O(nlog(n)), SC: O(1)
+    2. **Optimal - Two heaps**
+        1. TC: O(log(n)), SC: O(1)
