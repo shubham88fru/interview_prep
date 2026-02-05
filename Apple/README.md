@@ -32,7 +32,7 @@
     2. **Kadane's algo**
         1. TC: O(n), SC: O(1)
 
-6. **189. Rotate Array**
+6. **LC 189. Rotate Array**
     1. **Brute**
         1. rotate k times -> O(n*k), O(1)
     2. **Better**
@@ -40,29 +40,29 @@
     3. **Optimal**
         1. reverse 0..n-1, then reverse 0..k-1, then reverse k..n-1 --> TC: O(~n), SC: O(1)
 
-7. **253. Meeting Rooms II**
+7. **LC 253. Meeting Rooms II**
     1. **Two arrays - starts and end, sorting**
         1. TC: O(n + nlog(n) + nlog(n) + n), SC: O(n + n)
     2. **Heap** ??
         1. TC: O(nlog(n) + nlog(n)), SC: O(n)
 
-8. **206. Reverse Linked List**
+8. **LC 206. Reverse Linked List**
     1. **Iterative**
         1. TC: O(n), SC: O(1)
     2. **Recursive**
         1. TC: O(n), SC: O(1)
 
-9. **347. Top K Frequent Elements**
+9. **LC 347. Top K Frequent Elements**
     1. **Map + TreeMap**
         1. TC: O(nlog(n)), SC: O(n)
     2. **Min Heap**
         1. TC: O(nlog(k)), SC: O(n)
 
-10. **200. Number of Islands**
+10. **LC 200. Number of Islands**
     1. **BFS/DFS**
         1. TC: O(m*n), SC: O(1)
 
-11. **23. Merge k Sorted Lists**
+11. **LC 23. Merge k Sorted Lists**
     1. **Optimal - merge sort** ??
         1. TC: O(N*log(k)) -> N is total num of nodes and K is num of lists, SC: O(1)
     2. **Optimized heap**
@@ -72,41 +72,41 @@
     4. **Brute force merge 2 lists successively**
         1. TC: O(k*N) -> N is total num of nodes and K is num of lists, SC: O(1)
 
-12. **49. Group Anagrams**
+12. **LC 49. Group Anagrams**
     1. **Optimal - Hashmap**
         1. TC: O(k*n), SC: O(n*k)
     2. **Brute - sort**
         1. TC: O(k*n*log(n)), SC: O(n*k)
 
-13. **125. Valid Palindrome**
+13. **LC 125. Valid Palindrome**
     1. **Brute - Stringbuilder**
         1. TC: O(n), SC: O(n)
     2. **Optimal - two pointer**
         1. TC: O(n), SC: O(1)
 
-14. **210. Course Schedule II**
+14. **LC 210. Course Schedule II**
     1. **BFS/Kahn's algo/Toposort**
         1. TC: O(V+E), SC: O(V+E) ??
 
-15. **207. Course Schedule**
+15. **LC 207. Course Schedule**
     1. **BFS/Kahn's algo/Toposort**
         1. TC: O(V+E), SC: O(V+E) ??
 
-16. **981. Time Based Key-Value Store**
+16. **LC 981. Time Based Key-Value Store**
     1. **Brute - linear search**
         1. set - TC: O(1); get - TC: O(k) where k is length of timestamp list for the key.
     2. **Optimal - binary search**
         1. set - TC: O(1); get - TC: O(log(k)) where k is length of timestamp list for the key.
 
-17. **1047. Remove All Adjacent Duplicates In String**
+17. **LC 1047. Remove All Adjacent Duplicates In String**
     1. **Optimal - StringBuffer/Stack**
         1. TC: O(N), SC: O(N-D) where D is num of duplicate chars.
 
-18. **20. Valid Parentheses**
+18. **LC 20. Valid Parentheses**
     1. **Optimal - Stack**
         1. TC: O(N), SC: O(N)
 
-19. **713. Subarray Product Less Than K**
+19. **LC 713. Subarray Product Less Than K**
     1. **Optimal - Sliding Window**
         1. TC: O(N), SC: O(1)
     2. **Brute - Generate all subarrays**
@@ -114,16 +114,16 @@
     3. **Binary search** ??
         1. TC: O(nlog(n)), SC: O(n)
 
-20. **36. Valid Sudoku**
+20. **LC 36. Valid Sudoku**
     1. **3 Maps**
         1. TC: O(Nˆ2), SC: O(Nˆ2)
     2. Few more approaches in editorial. ??.
 
-21. **54. Spiral Matrix**
+21. **LC 54. Spiral Matrix**
     1. **Simulation**
         1. TC: O(N*M), SC: O(1)
 
-22. **121. Best Time to Buy and Sell Stock**
+22. **LC 121. Best Time to Buy and Sell Stock**
     1. **Brute - check each pair**
         1. TC: O(Nˆ2), SC: O(1)
     2. **Optimal - check running**
@@ -131,7 +131,7 @@
     3. **DP - unnecessary**
         1. TC: O(N), SC: (N) 
 
-23. **122. Best Time to Buy and Sell Stock II**
+23. **LC 122. Best Time to Buy and Sell Stock II**
     1. **Brute**
         1. ??
     2. **Optimal - continuous addition**
@@ -139,7 +139,7 @@
     3. **Recursion/DP**
         1. TC: O(N), SC: (N) 
 
-24. **238. Product of Array Except Self**
+24. **LC 238. Product of Array Except Self**
     1. **Brute - for each multiply the rest**
         1. TC: O(nˆ2), SC: O(1)
     2. **Noob - divide overall pdt by each. Not allowed as per q.**
@@ -149,7 +149,7 @@
     4. **Optimal - without extra space**
         1. TC: O(N), SC: (1)
 
-25. **1146. Snapshot Array**
+25. **LC 1146. Snapshot Array**
     1. **Brute - simulation, copy entire array on each call**
         1. Map of snapid vs copy of array
         2. TC: O(n*k) {n calls to snap, in each call, copy entire array of size k}, SC: O(n*k)
@@ -158,7 +158,7 @@
     3. **Optimal - treemap**
         1. TC: O(nlog(n) + k), SC: O(n+k)
 
-26. **26. Remove Duplicates from Sorted Array**
+26. **LC 26. Remove Duplicates from Sorted Array**
     1. **Brute - Using extra array and set**
         1. Store values in extra array and use set to track duplicate.
         2. TC: O(n), SC: O(2n)
@@ -167,7 +167,7 @@
     3. **Optimal - two pointers**
         1. TC: O(n), SC: O(1)
 
-27. **3. Longest Substring Without Repeating Characters**
+27. **LC 3. Longest Substring Without Repeating Characters**
     1. **Brute - Generate all substrings**
         1. TC: O(nˆ2), SC: O(nˆ2)
     2. **Better - suboptimal Sliding window**
@@ -175,12 +175,12 @@
     3. **Optimal - Optimal sliding window**
         1. TC: O(n), SC: O(n)
 
-28. **34. Find First and Last Position of Element in Sorted Array**
+28. **LC 34. Find First and Last Position of Element in Sorted Array**
     1. **Brute - linear search**
         1. TC: O(n), SC: O(1)
     2. **Optimal - binary search**
         1. TC: O(log(n)), SC: O(1)
 
-29. **108. Convert Sorted Array to Binary Search Tree**
+29. **LC 108. Convert Sorted Array to Binary Search Tree**
     1. **Optimal - preorder traversal**
         1. TC: O(N), SC: O(log(n))
