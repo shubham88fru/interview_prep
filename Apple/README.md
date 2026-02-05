@@ -180,3 +180,7 @@
         1. TC: O(n), SC: O(1)
     2. **Optimal - binary search**
         1. TC: O(log(n)), SC: O(1)
+
+29. **108. Convert Sorted Array to Binary Search Tree**
+    1. **Optimal - preorder traversal**
+        1. TC: O(N), SC: O(log(n))
