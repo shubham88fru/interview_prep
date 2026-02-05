@@ -174,3 +174,9 @@
         1. TC: O(2n), SC: O(n)
     3. **Optimal - Optimal sliding window**
         1. TC: O(n), SC: O(n)
+
+28. **34. Find First and Last Position of Element in Sorted Array**
+    1. **Brute - linear search**
+        1. TC: O(n), SC: O(1)
+    2. **Optimal - binary search**
+        1. TC: O(log(n)), SC: O(1)
