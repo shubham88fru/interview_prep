@@ -184,3 +184,12 @@
 29. **LC 108. Convert Sorted Array to Binary Search Tree**
     1. **Optimal - preorder traversal**
         1. TC: O(N), SC: O(log(n))
+
+30. **LC 211. Design Add and Search Words Data Structure**
+    1. **Brute - Simple map**
+        1. For each word, check with all entry in map.
+        2. TC: O(M*N), SC: O(N); where M is length of word to be searched, and N is total number of words.
+    2. **Optimal - Trie and DFS**
+        1. Trie stores the words in compressed format because of same prefix matching.
+        2. TC: O(M) when word doesn't have any dot. But TC: O(N*26ˆM) in worst case when all chars in word are dot.
+        3. SC: O(M) ??
