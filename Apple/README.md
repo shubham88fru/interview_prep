@@ -157,3 +157,12 @@
         1. ??
     3. **Optimal - treemap**
         1. TC: O(nlog(n) + k), SC: O(n+k)
+
+26. **26. Remove Duplicates from Sorted Array**
+    1. **Brute - Using extra array and set**
+        1. Store values in extra array and use set to track duplicate.
+        2. TC: O(n), SC: O(2n)
+    2. **Better - Same array, two pointers, and set**
+        1. TC: O(n), SC: O(n)
+    3. **Optimal - two pointers**
+        1. TC: O(n), SC: O(1)
