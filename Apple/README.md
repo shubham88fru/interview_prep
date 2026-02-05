@@ -166,3 +166,11 @@
         1. TC: O(n), SC: O(n)
     3. **Optimal - two pointers**
         1. TC: O(n), SC: O(1)
+
+27. **3. Longest Substring Without Repeating Characters**
+    1. **Brute - Generate all substrings**
+        1. TC: O(nˆ2), SC: O(nˆ2)
+    2. **Better - suboptimal Sliding window**
+        1. TC: O(2n), SC: O(n)
+    3. **Optimal - Optimal sliding window**
+        1. TC: O(n), SC: O(n)
