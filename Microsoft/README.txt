@@ -54,6 +54,16 @@
        c. Trie
            ii. TC: O(n*m); where n is length of first string and m is number of strings. SC: O(n)
 
+22. LC 1797. Design authentication manager.
+    a. Brute
+        i. Using hashmap --> O(n) for get unexpired token call
+        ii. Works because its given that timestamps are in increasing order.
+    b. LRU using DLL ??
+        i. We can keep the token in a increasing order in DLL, which would have the
+        added benefit of moving renewed token to front in constant time. When counting
+        unexpired tokens, we can break early when we find the first expired token which
+        will improve runtime in avg case. But worst case TC will still be O(n)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
@@ -126,11 +136,6 @@
         i. generate all subs, in each sub, replace each char with a char of sub and see if
             it can be done within k replacement to make all chars same --> O(nˆ2 +..)
         ii. Sliding window -> O(n)
-
-22. LC 1797. Design authentication manager.
-    a. Brute
-        i. Using hashmap --> O(n) for get unexpired token call
-    b. LRU using DLL --> O(1) on avg ??
 
 23. LC 16. 3 Sum closest
     a. Brute
