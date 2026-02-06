@@ -45,6 +45,15 @@
     c. Buy at min and sell at max. Keep track of min and keep calculating max diff. -> TC: O(n), SC: O(1)
     d. Recursion memo -> TC: O(n), SC: O(n)
 
+9. LC 14. Longest Common Prefix
+       a. Brute.
+           i. Check each substring of first string in the rest of the strings.
+           ii. TC: O(n*m); where n is length of first string and m is number of strings. SC: O(nˆ2)
+       b. Optimized
+           i. TC: O(n*m); where n is length of first string and m is number of strings. SC: O(1)
+       c. Trie
+           ii. TC: O(n*m); where n is length of first string and m is number of strings. SC: O(n)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
