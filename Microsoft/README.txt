@@ -54,7 +54,7 @@
        c. Trie
            ii. TC: O(n*m); where n is length of first string and m is number of strings. SC: O(n)
 
-22. LC 1797. Design authentication manager.
+10. LC 1797. Design authentication manager.
     a. Brute
         i. Using hashmap --> O(n) for get unexpired token call
         ii. Works because its given that timestamps are in increasing order.
