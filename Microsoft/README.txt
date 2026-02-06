@@ -38,6 +38,13 @@
       b.  Optimal
          ii. Kadanes' algo one pass, keep track of max - O(n)
 
+8. LC 121. Best Time to Buy and Sell Stock
+    a. Brute.
+        i. Buy at each and then check best day to sell while keeping track of max. -> O(nˆ2)
+    b. Sliding window. -> O(n)
+    c. Buy at min and sell at max. Keep track of min and keep calculating max diff. -> TC: O(n), SC: O(1)
+    d. Recursion memo -> TC: O(n), SC: O(n)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
@@ -61,12 +68,6 @@
            [low..mid-1] --> 1
            [mid..high] --> unsorted
            [high+1..n-1] --> 2
-
-9. LC 121. Best Time to Buy and Sell Stock
-    a. Brute.
-        i. Buy at each and then check best day to sell while keeping track of max. -> O(nˆ2)
-    b. Sliding window. -> O(n)
-    c. Buy at min and sell at max. Keep track of min and keep calculating max diff. -> O(n)
 
 10. LC 9. Palindrome number
     a. Brute
