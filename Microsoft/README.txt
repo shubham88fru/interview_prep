@@ -5,28 +5,38 @@
         i.	Check each pair -> O(nˆ2)
       b.	Map -> O(n), O(n)
 
-2.	LC 5. Longest palindromic substring
+2.  LC 2. Add two numbers
+      a. Brute
+        i. LL traversal, dummy node for ans -> O(n)
+
+3.	LC 5. Longest palindromic substring
       a.	Brute
-         i.	Generate substring of all length starting from largest to smallest ->
+         i.	Generate substring of all length starting from largest to smallest -> O(nˆ3)
       b.	Top down
          i.	Boolean array -> O(Nˆ2), O(Nˆ2)
       c.	Bottom up
-         i.	Check palindrome for each sub (i..j) and keep caching the result for faster check for later subs ->
+         i.	Check palindrome for each sub (i..j) and keep caching the result for faster check for later subs -> O(nˆ2), O(nˆ2)
 
-3.	LC 11. Container with most water
+4. LC 146. LRU cache
+    a. Brute - HashMap, and Singly Linked list
+       i. TC: get -> O(n), TC: put -> O(1)
+    a. HashMap and DLL -> O(1)
+
+5. LC 3. Longest substring without repeating chars
+    a. Brute.
+        i. Generate all subs, in each sub check if it doesn't repeat and record. -> O(nˆ2)
+    b. Sliding window -> O(n)
+
+6.	LC 11. Container with most water
       a.	Brute
          i.	Take each rod as left and find a right that gives max area -> O(nˆ2)
       b.	Two pointer -> O(n)
 
-4.  LC 53. Maximum subarray
+7.  LC 53. Maximum subarray
       a.  Brute
          i. Generate all subs (two loops) - O(nˆ2)
       b.  Optimal
          ii. Kadanes' algo one pass, keep track of max - O(n)
-
-5.  LC 2. Add two numbers
-      a. Brute
-        i. LL traversal, dummy node for ans -> O(n)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
@@ -75,8 +85,7 @@
 13. LC 138. Copy List with Random Pointer
     a. HashMap -> O(n)
 
-14. LC 146. LRU cache
-    a. HashMap and DLL -> O(1)
+
 
 15. LC 49. Group anagrams
     a. Hashmap and freq array --> O(n*k)
@@ -107,11 +116,6 @@
         i. generate all subs, in each sub, replace each char with a char of sub and see if
             it can be done within k replacement to make all chars same --> O(nˆ2 +..)
         ii. Sliding window -> O(n)
-
-21. LC 3. Longest substring without repeating chars
-    a. Brute.
-        i. Generate all subs, in each sub check if it doesn't repeat and record. -> O(nˆ2)
-    b. Sliding window -> O(n)
 
 22. LC 1797. Design authentication manager.
     a. Brute
