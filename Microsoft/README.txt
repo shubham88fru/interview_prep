@@ -127,6 +127,16 @@
     c. Optimal - Sort and 3 pointers.
         i. TC: (nlog(n) + nˆ2), SC: O(1)
 
+19. LC 23. Merge k Sorted Lists
+    1. Optimal - merge sort ??
+        1. TC: O(N*log(k)) -> N is total num of nodes and K is num of lists, SC: O(1)
+    2. Optimized heap
+        1. TC: O(N*log(k)) -> N is total num of nodes and K is num of lists, SC: O(k)
+    3. Naive heap
+        1. TC: O(N*log(N)) -> N is total num of nodes, SC: O(N)
+    4. Brute force merge 2 lists successively
+        1. TC: O(k*N) -> N is total num of nodes and K is num of lists, SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
