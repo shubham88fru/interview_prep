@@ -136,6 +136,15 @@
         1. TC: O(N*log(N)) -> N is total num of nodes, SC: O(N)
     4. Brute force merge 2 lists successively
         1. TC: O(k*N) -> N is total num of nodes and K is num of lists, SC: O(1)
+        
+20. LC 26. Remove Duplicates from Sorted Array
+    1. Brute - Using extra array and set
+        1. Store values in extra array and use set to track duplicate.
+        2. TC: O(n), SC: O(2n)
+    2. Better - Same array, two pointers, and set
+        1. TC: O(n), SC: O(n)
+    3. Optimal - two pointers
+        1. TC: O(n), SC: O(1)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
