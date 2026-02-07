@@ -64,11 +64,25 @@
         unexpired tokens, we can break early when we find the first expired token which
         will improve runtime in avg case. But worst case TC will still be O(n)
 
-11. 560. Subarray Sum Equals K
+11. LC 560. Subarray Sum Equals K
     a. Brute
         i. Calculate sum for each subarray -> TC: O(nˆ2), SC: O(1).
     b. Optimal - HashMap and Prefix sum
         i. TC: O(n), SC: O(n)
+
+12. LC 200. Number of Islands
+    1. BFS/DFS
+        1. TC: O(m*n), SC: O(1)
+        
+13. LC 238. Product of Array Except Self
+    1. Brute - for each multiply the rest
+        1. TC: O(nˆ2), SC: O(1)
+    2. Noob - divide overall pdt by each. Not allowed as per q.
+        1. TC: O(N), SC: O(1)
+    3. Suboptimal - prefix and suffix array
+        1. TC: O(N), SC: O(N)
+    4. Optimal - without extra space
+        1. TC: O(N), SC: (1)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
@@ -97,7 +111,9 @@
 10. LC 9. Palindrome number
     a. Brute
         i. Convert the number to string, reverse and then compare. -> O(n), O(n)
-    b. Math reverse using % and / -> O(n)
+    b. Math reverse using % and / -> O(log(n)) where its log to base 10
+    c. Optimal
+        i. Same as b. but with early return. Only do till og x is > rev, see lc editorial.
 
 11. LC 21. Merge two sorted lists
     a. Brute
