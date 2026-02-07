@@ -91,7 +91,7 @@
     c. Optimal
         i. Same as b. but with early return. Only do till og x is > rev, see lc editorial.
 
-15. 70. Climbing Stairs
+15. LC 70. Climbing Stairs
     a. Brute - plain recursion
         i. TC: O(2ˆn), SC: O(n)
     b. DP recursion with memo
@@ -99,7 +99,7 @@
     c. Fibonacci with two variables.
         i. TC: O(n), SC: O(1)
 
-16. 42. Trapping Rain Water
+16. LC 42. Trapping Rain Water
     a. Brute - For each find left and right boundary.
         i. TC: O(nˆ2), SC: O(1)
     b. Better - prefix nand suffix max
@@ -108,6 +108,24 @@
         i. TC: O(n), SC: O(n)
     d. Optimal - Two pointer.
         i. TC: O(n), SC: O(1)
+
+17. LC 4. Median of Two Sorted Arrays
+    a. Brute - Copy to new array and sort.
+        i. TC: O(n+m + (n+m)log(m+n)), SC: O(m+n)
+    b. Better - merge two sorted arrays.
+        i. TC: O(m+n), SC: O(m+n)
+    c. Even better - merge two sorted arrays but dont' form a new array, just keep track of mid and mid+1
+        i. TC: O(m+n), SC: O(1)
+    d. Optimal - Binary search
+        i. TC: O(log(m+n)), SC: O(1)
+
+18. LC 15. 3Sum
+    a. Brute - 3 loops and set for duplicate check.
+        i. TC: O(nˆ3), SC: O(n)
+    b. Better - 2 loops + set + two sum logic.
+        i. TC: O(nˆ2), SC: O(n)
+    c. Optimal - Sort and 3 pointers.
+        i. TC: (nlog(n) + nˆ2), SC: O(1)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
