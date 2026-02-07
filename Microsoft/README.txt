@@ -64,6 +64,12 @@
         unexpired tokens, we can break early when we find the first expired token which
         will improve runtime in avg case. But worst case TC will still be O(n)
 
+11. 560. Subarray Sum Equals K
+    a. Brute
+        i. Calculate sum for each subarray -> TC: O(nˆ2), SC: O(1).
+    b. Optimal - HashMap and Prefix sum
+        i. TC: O(n), SC: O(n)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
