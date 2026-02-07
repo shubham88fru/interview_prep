@@ -84,6 +84,31 @@
     4. Optimal - without extra space
         1. TC: O(N), SC: (1)
 
+14. LC 9. Palindrome number
+    a. Brute
+        i. Convert the number to string, reverse and then compare. -> O(n), O(n)
+    b. Math reverse using % and / -> O(log(n)) where its log to base 10
+    c. Optimal
+        i. Same as b. but with early return. Only do till og x is > rev, see lc editorial.
+
+15. 70. Climbing Stairs
+    a. Brute - plain recursion
+        i. TC: O(2ˆn), SC: O(n)
+    b. DP recursion with memo
+        i. TC: O(n), SC: O(n)
+    c. Fibonacci with two variables.
+        i. TC: O(n), SC: O(1)
+
+16. 42. Trapping Rain Water
+    a. Brute - For each find left and right boundary.
+        i. TC: O(nˆ2), SC: O(1)
+    b. Better - prefix nand suffix max
+        i. TC: O(n), SC: O(n)
+    c. Stack ??
+        i. TC: O(n), SC: O(n)
+    d. Optimal - Two pointer.
+        i. TC: O(n), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
@@ -107,13 +132,6 @@
            [low..mid-1] --> 1
            [mid..high] --> unsorted
            [high+1..n-1] --> 2
-
-10. LC 9. Palindrome number
-    a. Brute
-        i. Convert the number to string, reverse and then compare. -> O(n), O(n)
-    b. Math reverse using % and / -> O(log(n)) where its log to base 10
-    c. Optimal
-        i. Same as b. but with early return. Only do till og x is > rev, see lc editorial.
 
 11. LC 21. Merge two sorted lists
     a. Brute
