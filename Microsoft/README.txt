@@ -181,7 +181,14 @@
     a. Brute
         i. generate all subs, in each sub, replace each char with a char of sub and see if
             it can be done within k replacement to make all chars same --> O(nˆ2 +..)
-        ii. Sliding window -> TC: O(n), SC: O(1) coz the map only stores the 26 english alphas
+    b. Optimal - Sliding window
+        i. TC: O(n), SC: O(1) coz the map only stores the 26 english alphas
+
+26. 2858. Minimum Edge Reversals So Every Node Is Reachable
+    a. Brute
+        i. DFS from each node. TC: O(V*(V+E))
+    b. Optimal - DFS from root, store cost and depth.
+        i. TC: O(V+E)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
