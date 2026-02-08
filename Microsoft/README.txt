@@ -177,6 +177,12 @@
     b. Two pointer
         i. TC: O(n), SC: O(1)
 
+25. LC 424. Longest repeating character replacement.
+    a. Brute
+        i. generate all subs, in each sub, replace each char with a char of sub and see if
+            it can be done within k replacement to make all chars same --> O(nˆ2 +..)
+        ii. Sliding window -> TC: O(n), SC: O(1) coz the map only stores the 26 english alphas
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
@@ -220,12 +226,6 @@
 19. LC 242. Valid anagram
     a. 26 len array -> O(n)
     b. hashmap (if lets say the string contains special chars/unicode) -> O(n), O(n)
-
-20. LC 424. Longest repeating character replacement.
-    a. Brute
-        i. generate all subs, in each sub, replace each char with a char of sub and see if
-            it can be done within k replacement to make all chars same --> O(nˆ2 +..)
-        ii. Sliding window -> O(n)
 
 23. LC 16. 3 Sum closest
     a. Brute
