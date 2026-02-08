@@ -171,6 +171,12 @@
            [mid..high] --> unsorted
            [high+1..n-1] --> 2
 
+24. LC 283. Move zeros
+    a. Brute - use extra array
+        i. TC: O(n), SC: O(n)
+    b. Two pointer
+        i. TC: O(n), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
