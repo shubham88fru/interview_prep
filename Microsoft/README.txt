@@ -152,6 +152,25 @@
     2. Optimal - in place using two pointers
         1. TC: O(n), SC: O(1)
 
+
+22. LC 49. Group anagrams
+    i. brute - sort each string and map
+        a. TC: O(n*klog(k)), SC: O(n), where n is num of string and k is length of max string.
+    a. Hashmap and freq array --> O(n*k)
+
+23. LC 75. Sort colors
+    a. Brute
+        i. Sort -> O(nlog(n))
+    b. 3 pass
+        i. Manually sort (using single for loop) each code (0, 1, 2) one by one. -> O(3N)
+    c. 2 pass
+        i. Iterate and store freq of 0, 1, and 2. Then Iterate and replace each el in array --> O(2N)
+    d. Dutch National Flag algo, 1 Pass
+        i. [0..low-1] --> 0
+           [low..mid-1] --> 1
+           [mid..high] --> unsorted
+           [high+1..n-1] --> 2
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
@@ -162,19 +181,6 @@
      a. Brute
         i. Linear search -> O(n)
      b. Modified Binary search -> O(log(n))
-
-8. LC 75. Sort colors
-    a. Brute
-        i. Sort -> O(nlog(n))
-    b. 3 pass
-        i. Manually sort (using single for loop) each code (0, 1, 2) one by one. -> O(3N)
-    c. 2 pass
-        i. Iterate and store freq of 0, 1, and 2. Then Iterated and replace each el in array --> O(2N)
-    d. Dutch National Flag algo, 1 Pass
-        i. [0..low-1] --> 0
-           [low..mid-1] --> 1
-           [mid..high] --> unsorted
-           [high+1..n-1] --> 2
 
 11. LC 21. Merge two sorted lists
     a. Brute
@@ -187,11 +193,6 @@
 
 13. LC 138. Copy List with Random Pointer
     a. HashMap -> O(n)
-
-
-
-15. LC 49. Group anagrams
-    a. Hashmap and freq array --> O(n*k)
 
 16. LC 56. Merge intervals
     a. Sort and loop ->  O(nlog(n) + n + n)
