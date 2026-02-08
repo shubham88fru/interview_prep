@@ -146,6 +146,12 @@
     3. Optimal - two pointers
         1. TC: O(n), SC: O(1)
 
+21. LC 27. Remove Element
+    1. Brute - Using extra array
+        i. TC: O(n), SC: O(n)
+    2. Optimal - in place using two pointers
+        1. TC: O(n), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
