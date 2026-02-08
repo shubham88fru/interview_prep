@@ -184,11 +184,19 @@
     b. Optimal - Sliding window
         i. TC: O(n), SC: O(1) coz the map only stores the 26 english alphas
 
-26. 2858. Minimum Edge Reversals So Every Node Is Reachable
+26. LC 2858. Minimum Edge Reversals So Every Node Is Reachable
     a. Brute
         i. DFS from each node. TC: O(V*(V+E))
     b. Optimal - DFS from root, store cost and depth.
         i. TC: O(V+E)
+
+27. LC 7. Reverse Integer
+    a. Brute - convert to string and reverse string.
+        i. TC: O(log(n)), SC: O(log(n))
+    b. Better - use long for overflow check.
+        i. TC: O(log(n)), SC: O(1)
+    c. Optimal - use int for overflow check.
+        i. TC: O(log(n)), SC: O(1)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
