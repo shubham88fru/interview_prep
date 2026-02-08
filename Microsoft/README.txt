@@ -198,6 +198,10 @@
     c. Optimal - use int for overflow check.
         i. TC: O(log(n)), SC: O(1)
 
+28. LC 13. Roman to Integer
+    a. Brute - store in map
+        i. TC: O(N), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
