@@ -202,16 +202,16 @@
     a. Brute - store in map
         i. TC: O(N), SC: O(1)
 
+29. LC 33. Search in rotated sorted array.
+     a. Brute
+        i. Linear search -> O(n)
+     b. Modified Binary search -> O(log(n))
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
       b. Stack
         i. Left to right or vice versa, using stack. -> O(n)
-
-7. LC 33. Search in rotated sorted array.
-     a. Brute
-        i. Linear search -> O(n)
-     b. Modified Binary search -> O(log(n))
 
 11. LC 21. Merge two sorted lists
     a. Brute
