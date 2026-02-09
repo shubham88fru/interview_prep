@@ -234,6 +234,12 @@
         i. Store nodes in arraylist, sort array list and then link -> O(n+m + (n+m)log(n+m) + n + m), O(n+m)
     b. Merge using third LL --> O(n+m), O(n+m)
     c. Inplace merge -> O(n+m), O(1)
+    
+35. LC 34. Find First and Last Position of Element in Sorted Array
+    1. Brute - linear search
+        1. TC: O(n), SC: O(1)
+    2. Optimal - binary search
+        1. TC: O(log(n)), SC: O(1)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
