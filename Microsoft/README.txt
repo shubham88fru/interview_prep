@@ -206,6 +206,10 @@
      a. Brute
         i. Linear search -> O(n)
      b. Modified Binary search -> O(log(n))
+     
+30. LC 54. Spiral Matrix
+    1. Simulation
+        1. TC: O(N*M), SC: O(1)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
