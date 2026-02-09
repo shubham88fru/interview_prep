@@ -223,6 +223,12 @@
     1. Brute - backtracking
         i. TC: O(n*4ˆn), SC: O(n)
 
+33. LC 19. Remove Nth Node From End of List
+    1. Brute - Two pass
+        i. TC: O(n), SC: O(1)
+    2. Optimal - Two pointer
+        i. TC: O(n), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
