@@ -210,6 +210,14 @@
 30. LC 54. Spiral Matrix
     1. Simulation
         1. TC: O(N*M), SC: O(1)
+        
+31. LC 189. Rotate Array
+    1. Brute
+        1. rotate k times -> O(n*k), O(1)
+    2. Better
+        1. Use extra space to store rotated values and copyback -> TC: O(n), SC: O(n)
+    3. Optimal
+        1. reverse 0..n-1, then reverse 0..k-1, then reverse k..n-1 --> TC: O(~n), SC: O(1)
 
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
