@@ -219,6 +219,10 @@
     3. Optimal
         1. reverse 0..n-1, then reverse 0..k-1, then reverse k..n-1 --> TC: O(~n), SC: O(1)
 
+32. LC 17. Letter Combinations of a Phone Number
+    1. Brute - backtracking
+        i. TC: O(n*4ˆn), SC: O(n)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
