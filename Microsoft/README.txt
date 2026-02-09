@@ -229,17 +229,17 @@
     2. Optimal - Two pointer
         i. TC: O(n), SC: O(1)
 
+34. LC 21. Merge two sorted lists
+    a. Brute
+        i. Store nodes in arraylist, sort array list and then link -> O(n+m + (n+m)log(n+m) + n + m), O(n+m)
+    b. Merge using third LL --> O(n+m), O(n+m)
+    c. Inplace merge -> O(n+m), O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
       b. Stack
         i. Left to right or vice versa, using stack. -> O(n)
-
-11. LC 21. Merge two sorted lists
-    a. Brute
-        i. Store nodes in arraylist, sort array list and then link -> O(n+m + (n+m)log(n+m) + n + m), O(n+m)
-    b. Merge using third LL --> O(n+m), O(n+m)
-    c. Inplace merge -> O(n+m), O(1)
 
 12. LC 101. Symmetric tree
     a. DFS -> O(n)
