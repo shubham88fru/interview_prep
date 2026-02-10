@@ -264,14 +264,17 @@
     a. DFS -> O(n), SC: O(n)
     b. BFS -> O(n), SC: O(n)
 
+40. LC 138. Copy List with Random Pointer
+    a. Better - HashMap
+        i. TC: O(n), SC: O(n)
+    b. Optimal - Pointers --> clever but tricky to code ??
+        i. TC: O(3n), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
       b. Stack
         i. Left to right or vice versa, using stack. -> O(n)
-
-13. LC 138. Copy List with Random Pointer
-    a. HashMap -> O(n)
 
 17. LC 73. Set Matrix Zeroes
     a. Brute
