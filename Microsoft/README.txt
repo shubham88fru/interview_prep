@@ -241,6 +241,14 @@
     2. Optimal - binary search
         1. TC: O(log(n)), SC: O(1)
 
+36. LC 50. Pow(x, n)
+    1. Brute - linear
+        1. TC: O(n), SC: O(1)
+    2. Better - binary exponentiation recursive.
+        1. TC: O(log(n)), SC: O(log(n))
+    3. Optimal - binary exponentiation iterative.
+        1. TC: O(log(n)), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
