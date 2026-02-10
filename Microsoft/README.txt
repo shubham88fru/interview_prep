@@ -252,6 +252,14 @@
 37. LC 56. Merge intervals
     a. Sort and loop ->  O(nlog(n) + n + n)
 
+38. LC 215. Kth Largest Element in an Array
+    a. Brute - sort
+        i. TC: O(nlog(n)), SC: O(1)
+    b. Better - min heap
+        i. TC: O(nlog(k)), SC: O(k)
+    c. Optimal - quick select ??
+        i. TC: O(n) in avg case but worst case O(nˆ2), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
