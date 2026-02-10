@@ -280,7 +280,7 @@
     a. Optimal - sliding window
         i. TC: O(n), SC: O(1)
 
-6. LC 1475. Final Prices With a Special Discount in a Shop
+43. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
       b. Stack
