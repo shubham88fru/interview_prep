@@ -260,14 +260,15 @@
     c. Optimal - quick select ??
         i. TC: O(n) in avg case but worst case O(nˆ2), SC: O(1)
 
+39. LC 101. Symmetric tree
+    a. DFS -> O(n), SC: O(n)
+    b. BFS -> O(n), SC: O(n)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
       b. Stack
         i. Left to right or vice versa, using stack. -> O(n)
-
-12. LC 101. Symmetric tree
-    a. DFS -> O(n)
 
 13. LC 138. Copy List with Random Pointer
     a. HashMap -> O(n)
