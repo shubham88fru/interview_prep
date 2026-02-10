@@ -270,6 +270,12 @@
     b. Optimal - Pointers --> clever but tricky to code ??
         i. TC: O(3n), SC: O(1)
 
+41. LC 498. Diagonal Traverse
+    a. Better - HashMap
+        i. TC: O(m*n), SC: O(m+n)
+    b. Optimal --> no hashmap ?? tricky to code.
+        i. TC: O(m*n), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
