@@ -276,6 +276,10 @@
     b. Optimal --> no hashmap ?? tricky to code.
         i. TC: O(m*n), SC: O(1)
 
+42. LC 696. Count Binary Substrings
+    a. Optimal - sliding window
+        i. TC: O(n), SC: O(1)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
