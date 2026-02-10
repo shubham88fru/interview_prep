@@ -286,6 +286,12 @@
       b. Stack
         i. Left to right or vice versa, using stack. -> O(n)
 
+44. LC 31. Next Permutation
+      a. Brute - Generate all perms and in that find the next one.
+        i. TC: O(n!), SC: O(n)
+      b. One pass - two pointer.
+        i. TC: O(n), SC: O(1)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
