@@ -249,6 +249,9 @@
     3. Optimal - binary exponentiation iterative.
         1. TC: O(log(n)), SC: O(1)
 
+37. LC 56. Merge intervals
+    a. Sort and loop ->  O(nlog(n) + n + n)
+
 6. LC 1475. Final Prices With a Special Discount in a Shop
       a. Brute
         i. For each, check the first smaller on right -> O(nˆ2)
@@ -260,9 +263,6 @@
 
 13. LC 138. Copy List with Random Pointer
     a. HashMap -> O(n)
-
-16. LC 56. Merge intervals
-    a. Sort and loop ->  O(nlog(n) + n + n)
 
 17. LC 73. Set Matrix Zeroes
     a. Brute
