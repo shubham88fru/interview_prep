@@ -310,6 +310,10 @@
       b. Optimal - binary search
         i. TC: O(log(n)), SC: O(1)
 
+48. LC 242. Valid anagram
+    a. 26 len array -> O(n)
+    b. hashmap (if lets say the string contains special chars/unicode) -> O(n), O(n)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
@@ -323,10 +327,6 @@
 18. LC 93. Restore IP Addresses
     a. Backtracking
       i. Standard backtracking template --> O(MˆN) ???????
-
-19. LC 242. Valid anagram
-    a. 26 len array -> O(n)
-    b. hashmap (if lets say the string contains special chars/unicode) -> O(n), O(n)
 
 23. LC 16. 3 Sum closest
     a. Brute
