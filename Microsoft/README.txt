@@ -304,6 +304,12 @@
       a. BFS - reverse odd levels
         i. TC: O(n), SC: O(n)
 
+47. LC 162. Find Peak Element
+      a. Brute - linear search
+        i. TC: O(n), SC: O(1)
+      b. Optimal - binary search
+        i. TC: O(log(n)), SC: O(1)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
