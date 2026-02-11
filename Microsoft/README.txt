@@ -292,6 +292,14 @@
       b. One pass - two pointer.
         i. TC: O(n), SC: O(1)
 
+43. LC 78. Subsets
+      a. Backtracking 1
+        i. TC: O(n*2ˆn), SC: O(n)
+      b. Backtracking 2
+        i. TC: O(n*2ˆn), SC: O(n)
+      c. Bit manip
+        i. TC: O(n*2ˆn), SC: O(n)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
