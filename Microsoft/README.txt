@@ -314,6 +314,15 @@
     a. 26 len array -> O(n)
     b. hashmap (if lets say the string contains special chars/unicode) -> O(n), O(n)
 
+49. LC 863. All Nodes Distance K in Binary Tree
+    a. Hashmap - TC: O(n)
+
+50. LC 875. Koko Eating Bananas
+    a. Brute - linear search
+        i. TC: O(n), SC: O(1)
+    b. Optimal search - binary search
+        i. TC: O(log(n)), SC: O(1)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
