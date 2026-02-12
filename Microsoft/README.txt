@@ -351,6 +351,10 @@
     b. Optimal - smart addition
         i. TC: O(n), SC: O(1)
 
+54. LC 93. Restore IP Addresses
+    a. Backtracking
+      i. Standard backtracking template --> O(MˆN) ??????? 3ˆn
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
@@ -360,10 +364,6 @@
     c. Space efficient soln
         i. use first row and col to track which rows/cols
            need to marked zero --> O(m*n), O(1)
-
-18. LC 93. Restore IP Addresses
-    a. Backtracking
-      i. Standard backtracking template --> O(MˆN) ???????
 
 23. LC 16. 3 Sum closest
     a. Brute
