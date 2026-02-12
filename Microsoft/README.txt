@@ -340,6 +340,10 @@
 53. LC 3507. Minimum Pair Removal to Sort Array I
     a. Optimal - simulation using list.
         i. TC: O(nˆ2), SC: (n)
+        
+54. LC 20. Valid Parentheses
+    a. Optimal - Stack
+        i. TC: O(N), SC: O(N)
 
 17. LC 73. Set Matrix Zeroes
     a. Brute
