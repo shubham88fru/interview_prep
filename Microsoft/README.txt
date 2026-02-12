@@ -323,6 +323,16 @@
     b. Optimal search - binary search
         i. TC: O(log(n)), SC: O(1)
 
+51. LC 169. Majority Element
+    a. Brute - Check freq of each element
+        i. TC: O(nˆ2), SC: O(1)
+    b. Slightly better - Sorting
+        i. TC: O(n*log(n)), SC: O(1)
+    c. Better - Hashmap
+        i. TC: O(n), SC: O(n)
+    d. Optimal - Moore's voting
+        i. TC: O(n), SC: O(1)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
