@@ -333,6 +333,10 @@
     d. Optimal - Moore's voting
         i. TC: O(n), SC: O(1)
 
+52. LC 1768. Merge Strings Alternately
+    a. Optimal - two pointer
+        i. TC: O(m+n), SC: (m+n)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
