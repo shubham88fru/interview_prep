@@ -345,6 +345,12 @@
     a. Optimal - Stack
         i. TC: O(N), SC: O(N)
 
+54. LC 66. Plus One
+    a. Brute - simple addition
+        i. TC: O(2N), SC: O(N)
+    b. Optimal - smart addition
+        i. TC: O(n), SC: O(1)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
