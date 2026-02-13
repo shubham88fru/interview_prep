@@ -375,6 +375,12 @@
     c. Optimal - DSU
       i. TC ??
 
+57. LC 2571. Minimum Operations to Reduce an Integer to 0
+    a. Recursion
+      i. TC: O(log(n)ˆ2), SC: O(log(n))
+    b. Recursion + memo
+      i. TC: O(log(n)), SC: O(log(n))
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
