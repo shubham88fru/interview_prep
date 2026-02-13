@@ -381,6 +381,12 @@
     b. Recursion + memo
       i. TC: O(log(n)), SC: O(log(n))
 
+58. LC 57. Insert Interval
+    a. Brute - add interval and sort again
+      i. TC: O(nlog(n)), SC: O(n)
+    b. Optimal - add smartly and merge interval
+      i. TC: O(n), SC: O(n)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
