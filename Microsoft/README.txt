@@ -387,6 +387,12 @@
     b. Optimal - add smartly and merge interval
       i. TC: O(n), SC: O(n)
 
+58. LC 100. Same Tree
+    a. BFS
+      i. TC: O(n), SC: O(n)
+    b. DFS
+      i. TC: O(n), SC: O(n)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
