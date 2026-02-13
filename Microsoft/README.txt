@@ -387,11 +387,17 @@
     b. Optimal - add smartly and merge interval
       i. TC: O(n), SC: O(n)
 
-58. LC 100. Same Tree
+59. LC 100. Same Tree
     a. BFS
       i. TC: O(n), SC: O(n)
     b. DFS
       i. TC: O(n), SC: O(n)
+
+60. LC 125. Valid Palindrome
+    1. Brute - Stringbuilder
+        1. TC: O(n), SC: O(n)
+    2. Optimal - two pointer
+        1. TC: O(n), SC: O(1)
 
 17. LC 73. Set Matrix Zeroes
     a. Brute
