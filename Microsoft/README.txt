@@ -361,11 +361,19 @@
     b. DFS
       i. TC: O(n), SC: O(n)
 
-55. LC 733. Flood Fill
+56. LC 733. Flood Fill
     a. BFS
       i. TC: O(n), SC: O(n)
     b. DFS
       i. TC: O(n), SC: O(n)
+
+56. LC 1971. Find if Path Exists in Graph
+    a. BFS
+      i. TC: O(V+E), SC: O(V+E)
+    b. DFS
+      i. TC: O(V+E), SC: O(V+E)
+    c. Optimal - DSU
+      i. TC ??
 
 17. LC 73. Set Matrix Zeroes
     a. Brute
