@@ -4,13 +4,14 @@ import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class JavaStreamsInterviewQuestions {
     public static void main(String[] args) {
         List<Integer> ints = List.of(5, 1, 2, 13, 10, 11, 1, 3, 5, 10, 15);
-        List<String> strs = List.of("longstring","456", "1a2bcd" ,"streams api java", "game", "name", "same", "alright", "o", "oai", "else", "throw", "trash");
-
+        List<String> strs = List.of("longstring","listen", "silent", "456", "1a2bcd" ,
+                "streams api java", "game", "name", "same", "alright", "o", "oai", "else", "throw", "trash");
         /*
             1. Write a program to find the sum of all elements
             in a list using Java Stream API
@@ -393,7 +394,85 @@ public class JavaStreamsInterviewQuestions {
         Map<Boolean, List<Integer>> evenOddPartitions = ints.stream()
                 .collect(Collectors.partitioningBy(e -> e%2 == 0));
 
+        /*
+            56. Implement a method to calculate the Fibonacci sequence using Java streams.
+        */
+        LongStream fibonacci = Stream.iterate(
+                        new long[]{0, 1}, f -> new long[]{f[1], f[0] + f[1]})
+                .mapToLong(f -> f[0]);
+        fibonacci.limit(10).forEach(System.out::println);
 
+        /*
+            57. Given a list of strings, find the longest common prefix using Java streams
+        */
+        String longestCommonPrefix = strs.stream()
+                .reduce((s1, s2) -> {
+                    int length = Math.min(s1.length(), s2.length());
+                    int i = 0;
+                    while (i < length && s1.charAt(i) == s2.charAt(i)) {
+                        i++;
+                    }
+                    return s1.substring(0, i);
+                })
+                .orElse("");
+
+
+        /*
+            58. Find the maximum product of two integers in an array using Java streams.
+        */
+        IntStream.range(0, ints.size())
+                .map(i -> IntStream.range(i + 1, ints.size())
+                        .map(j -> ints.get(i) * ints.get(j))
+                        .max()
+                        .orElse(Integer.MIN_VALUE))
+                .max()
+                .orElse(Integer.MIN_VALUE);
+
+        /*
+            59. Implement a method to find all anagrams in a list of strings using Java streams
+        */
+        strs.stream().collect(Collectors.groupingBy(s -> {
+            char[] carr = s.toCharArray();
+            Arrays.sort(carr);
+            return new String(carr);
+        }));
+
+        /*
+            60. Find the number of occurrences of a given character in
+             a list of strings using Java streams
+        */
+        strs.stream()
+                .map(s -> s.chars().filter(c -> c == 'b').count())
+                .mapToLong(Long::longValue)
+                .sum();
+
+        strs.stream()
+                .flatMapToInt(s -> s.chars())
+                .filter(c -> c == 'b')
+                .count();
+
+        /*
+            61. Given a list of integers, find all pairs of numbers
+             that sum up to a given target using Java streams
+        */
+        ints.stream()
+                .flatMap(i -> ints.stream().
+                        map(j -> i + j == 12 ? "(" + i + ", " + j + ")" : ""))
+                .filter(s -> !s.isEmpty())
+                .collect(Collectors.toSet());
+
+        /*
+            62. Given a list of integers, find all non duplicate
+             integers using Java streams
+        */
+        Map<Integer, Long> frequencies = ints.stream()
+                .collect(Collectors
+                        .groupingBy(Function.identity(), Collectors.counting())
+                );
+
+        ints.stream()
+                .filter(number -> frequencies.get(number) == 1)
+                .forEach(System.out::println);
     }
 
     private static boolean isPrime(int num) {
