@@ -410,6 +410,12 @@
         i. TC: O(nˆ2*m) - where n is number of words and m is length of each word.
            SC: O(nˆ2) - we'll need to store nˆ2 edges because worst case each word will have edge to every other word.
 
+63. LC 142. Linked List Cycle II
+    1. Brute - hashset
+        i. TC: O(n), SC: O(n)
+    2. Optimal - f and s pointers, and tortoise and hare algo.
+        i. TC: O(n), SC: O(1)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
