@@ -1,5 +1,6 @@
 import java.util.Collections;
 import java.util.*;
+import java.util.function.Function;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -353,6 +354,46 @@ public class JavaStreamsInterviewQuestions {
         frequencyMap.entrySet().stream()
                 .filter(entry -> entry.getValue() == minFreq)
                 .map(Map.Entry::getKey).toList();
+
+        /*
+            51. Check if a list of integers contains a prime number using Java streams.
+        */
+        ints.stream().anyMatch(JavaStreamsInterviewQuestions::isPrime);
+
+        /*
+            52. Merge two sorted lists into a single sorted list using Java streams
+        */
+        Stream.concat(List.of(1, 2, 3, 4, 5).stream(), List.of(-1, 2, 9, 10, 16).stream())
+                .sorted().toList();
+
+        /*
+            53. Given a list of transactions, find the sum of transaction
+             amounts for each day using Java streams:
+        */
+        List<Transaction> transactions = Arrays.asList(
+                new Transaction("2022-01-01", 100),
+                new Transaction("2022-01-01", 200),
+                new Transaction("2022-01-02", 300),
+                new Transaction("2022-01-02", 400),
+                new Transaction("2022-01-03", 500)
+        );
+        Map<String, Integer> mp = transactions.stream().collect(Collectors
+                .groupingBy(t -> t.date, Collectors.summingInt(t -> t.amount)));
+
+        /*
+            54. Given a list of strings, find the frequency of each word using Java streams.
+        */
+        Map<String, Long> freqs = strs.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+        /*
+            55. Implement a method to partition a list into two groups based
+             on a predicate using Java streams:
+        */
+        Map<Boolean, List<Integer>> evenOddPartitions = ints.stream()
+                .collect(Collectors.partitioningBy(e -> e%2 == 0));
+
+
     }
 
     private static boolean isPrime(int num) {
@@ -364,5 +405,14 @@ public class JavaStreamsInterviewQuestions {
         }
 
         return true;
+    }
+}
+
+class Transaction {
+    String date;
+    int amount;
+    public Transaction(String date, int amount) {
+        this.date = date;
+        this.amount = amount;
     }
 }
