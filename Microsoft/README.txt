@@ -399,6 +399,17 @@
     2. Optimal - two pointer
         1. TC: O(n), SC: O(1)
 
+61. LC 84. Largest Rectangle in Histogram
+    1. Brute - for each find left and right boundary
+        1. TC: O(nˆ2), SC: O(1)
+    2. Optimal - monotonic stack
+        1. TC: O(n), SC: O(n)
+
+62. LC 127. Word Ladder
+    1. BFS
+        i. TC: O(nˆ2*m) - where n is number of words and m is length of each word.
+           SC: O(nˆ2) - we'll need to store nˆ2 edges because worst case each word will have edge to every other word.
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
