@@ -422,6 +422,12 @@
     2. Optimal - String builder
         i. TC: O(n), SC: O(n)
 
+65. LC 155. Min Stack
+    1. Brute - put pair in stack
+        i. TC: O(1), SC: O(n)
+    2. Slightly better (only do when interviewer aks, easy to screw) - two stacks. One og, one for min. Reduces redundant store of min.
+        i. TC: O(1), SC: O(n)
+
 17. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
