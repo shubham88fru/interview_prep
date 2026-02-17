@@ -4,7 +4,7 @@ and order them by ascending.
  */
 SELECT distinct YEAR(birth_date) as year
 FROM patients
-order by YEAR(birth_date) ASC
+order by YEAR(birth_date) ASC;
 
 /*
 2. Show unique first names from the patients
