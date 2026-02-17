@@ -439,5 +439,5 @@ Show the doctor_id, doctor_full_name, specialty, year, total_admissions for that
 */
 SELECT d.doctor_id, d.first_name || ' ' || d.last_name, d.specialty, YEAR(a.admission_date), COUNT(*)
 FROM doctors d
-         JOIN admissions a ON a.attending_doctor_id = d.doctor_id
+JOIN admissions a ON a.attending_doctor_id = d.doctor_id
 GROUP BY d.doctor_id, d.first_name || ' ' || d.last_name, d.specialty, YEAR(a.admission_date);
