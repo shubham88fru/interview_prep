@@ -382,3 +382,62 @@ FROM patients  p
          JOIN province_names pn ON pn.province_id = p.province_id
 GROUP BY pn.province_name
 HAVING SUM(CASE WHEN p.gender = 'M' THEN 1 ELSE 0 END) > SUM(CASE WHEN p.gender = 'F' THEN 1 ELSE 0 END);
+
+/*
+34.  We are looking for a specific patient. Pull all columns for
+the patient who matches the following criteria:
+- First_name contains an 'r' after the first two letters.
+- Identifies their gender as 'F'
+- Born in February, May, or December
+- Their weight would be between 60kg and 80kg
+- Their patient_id is an odd number
+- They are from the city 'Kingston'
+*/
+SELECT *
+FROM patients
+WHERE first_name like '__r%'
+AND gender = 'F'
+AND MONTH(birth_date) IN (2, 5, 12)
+AND weight between 60 AND 80
+AND patient_id%2 = 1
+AND city = 'Kingston';
+
+/*
+35. Show the percent of patients that have 'M' as their gender.
+Round the answer to the nearest hundreth number and in percent form.
+ */
+SELECT (ROUND(SUM(CASE WHEN gender = 'M'THEN 1 END)*100.0/(COUNT(*)), 2)) || '%' AS m_c
+FROM patients;
+
+/*
+36.  For each day display the total amount of admissions
+on that day. Display the amount changed from the previous date.
+*/
+WITH CTE AS(
+    SELECT admission_date, COUNT(*) as curr_day_adm
+    FROM admissions
+    group by admission_date
+)
+SELECT admission_date, curr_day_adm, curr_day_adm - LAG(curr_day_adm, 1) OVER (order by admission_date) AS prev_day_adm
+FROM CTE;
+
+/*
+37. Sort the province names in ascending order in such a way
+that the province 'Ontario' is always on top.
+*/
+WITH CTE AS (
+    SELECT province_name, (CASE WHEN province_name = 'Ontario' THEN 1 ELSE 0 END) AS sort_order
+    FROM province_names
+)
+SELECT province_name
+FROM CTE
+order by sort_order DESC, province_name;
+
+/*
+38. We need a breakdown for the total amount of admissions each doctor has started each year.
+Show the doctor_id, doctor_full_name, specialty, year, total_admissions for that year.
+*/
+SELECT d.doctor_id, d.first_name || ' ' || d.last_name, d.specialty, YEAR(a.admission_date), COUNT(*)
+FROM doctors d
+         JOIN admissions a ON a.attending_doctor_id = d.doctor_id
+GROUP BY d.doctor_id, d.first_name || ' ' || d.last_name, d.specialty, YEAR(a.admission_date);
