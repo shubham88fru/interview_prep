@@ -436,7 +436,8 @@ order by sort_order DESC, province_name;
 /*
 38. We need a breakdown for the total amount of admissions
 each doctor has started each year.
-Show the doctor_id, doctor_full_name, specialty, year, total_admissions for that year.
+Show the doctor_id, doctor_full_name, specialty, year,
+total_admissions for that year.
 */
 SELECT d.doctor_id, d.first_name || ' ' || d.last_name, d.specialty, YEAR(a.admission_date), COUNT(*)
 FROM doctors d
