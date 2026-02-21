@@ -473,6 +473,12 @@ public class JavaStreamsInterviewQuestions {
         ints.stream()
                 .filter(number -> frequencies.get(number) == 1)
                 .forEach(System.out::println);
+
+        /*
+            64. Generate stream of random number.
+        */
+        Random random = new Random();
+        Stream<Integer> randomNumbers = Stream.generate(random::nextInt);
     }
 
     private static boolean isPrime(int num) {
