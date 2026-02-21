@@ -20,3 +20,7 @@
         i. TC: O(n), SC: O(n)
     3. Optimal - Two pointer
         i. TC: O(n), SC: O(1)
+
+5. LC 143. Reorder List
+    1. Optimal - half, reverse, merge
+        i. TC: O(n), SC: O(1)
