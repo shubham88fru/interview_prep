@@ -8,3 +8,7 @@
 2. LC 54. Spiral Matrix
     1. Simulation
         1. TC: O(N*M), SC: O(1)
+
+3. LC 198. House Robber
+    1. Recursion + memo
+        1. TC: O(N), SC: O(N)
