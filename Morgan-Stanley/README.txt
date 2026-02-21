@@ -12,3 +12,11 @@
 3. LC 198. House Robber
     1. Recursion + memo
         1. TC: O(N), SC: O(N)
+
+4. LC 19. Remove Nth Node From End of List
+    1. Brute - Two pass
+        i. TC: O(n), SC: O(1)
+    2. Extra space - put in array list
+        i. TC: O(n), SC: O(n)
+    3. Optimal - Two pointer
+        i. TC: O(n), SC: O(1)
