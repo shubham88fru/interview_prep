@@ -443,3 +443,11 @@ SELECT d.doctor_id, d.first_name || ' ' || d.last_name, d.specialty, YEAR(a.admi
 FROM doctors d
 JOIN admissions a ON a.attending_doctor_id = d.doctor_id
 GROUP BY d.doctor_id, d.first_name || ' ' || d.last_name, d.specialty, YEAR(a.admission_date);
+
+/*
+39. Write query to find 3rd highest salary
+*/
+SELECT DISTINCT salary
+FROM Employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 2;
