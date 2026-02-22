@@ -38,5 +38,7 @@
         i. TC: O(n), SC: O(1)
 
 8. LC 387. First Unique Character in a String
-    1. Optimal - freq aray and 2 pass.
+    1. Brute - for each compare with rest
+        i. TC: O(nˆ2), SC: O(1)
+    2. Optimal - freq aray and 2 pass.
         i. TC: O(n), SC: O(1)
