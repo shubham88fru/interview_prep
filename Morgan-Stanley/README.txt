@@ -63,3 +63,9 @@
     b. Math reverse using % and / -> O(log(n)) where its log to base 10
     c. Optimal
         i. Same as b. but with early return. Only do till og x is > rev, see lc editorial.
+
+12. LC 739. Daily Temperatures
+    a. Brute
+        i: TC: O(nˆ2)
+    b. Optimal - stack
+        i: TC: O(n)
