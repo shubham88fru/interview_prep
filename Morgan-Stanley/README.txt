@@ -75,3 +75,6 @@
       i. TC: O(n!), SC: O(n)
     b. One pass - breakpoint, swap, reverse
       i. TC: O(n), SC: O(1)
+
+14. LC 460. LFU Cache
+    a. Optimal - Two maps: <key, DLLNode> and <freq, LRUDLL>
