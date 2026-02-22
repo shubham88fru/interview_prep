@@ -78,3 +78,7 @@
 
 14. LC 460. LFU Cache
     a. Optimal - Two maps: <key, DLLNode> and <freq, LRUDLL>
+
+15. LC 1481. Least Number of Unique Integers after K Removals
+    a. Brute force - heap and map
+      i. TC: O(nlog(n)), SC: O(n)
