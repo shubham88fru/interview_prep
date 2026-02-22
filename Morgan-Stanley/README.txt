@@ -69,3 +69,9 @@
         i: TC: O(nˆ2)
     b. Optimal - stack
         i: TC: O(n)
+
+13. LC 31. Next Permutation
+    a. Brute - Generate all perms and in that find the next one.
+      i. TC: O(n!), SC: O(n)
+    b. One pass - breakpoint, swap, reverse
+      i. TC: O(n), SC: O(1)
