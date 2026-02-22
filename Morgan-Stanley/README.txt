@@ -46,3 +46,13 @@
 9. LC 14. Longest Common Prefix
     1. Optimal
         i. TC: O(S), O(1) ; where s is combined length of all the strings.
+
+10. LC 74. Search a 2D Matrix
+    1. Brute
+        i. TC: O(m*n), O(1)
+    2. Binary search on each row
+        i. TC: (m*log(n)), O(1)
+    3. Smart search from top-right
+        i. TC: O(m+n), SC: O(1)
+    4. Binary search
+        i. TC: O(log(m*n)), SC: O(1)
