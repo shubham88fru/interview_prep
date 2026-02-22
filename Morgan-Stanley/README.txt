@@ -42,3 +42,7 @@
         i. TC: O(nˆ2), SC: O(1)
     2. Optimal - freq aray and 2 pass.
         i. TC: O(n), SC: O(1)
+
+9. LC 14. Longest Common Prefix
+    1. Optimal
+        i. TC: O(S), O(1) ; where s is combined length of all the strings.
