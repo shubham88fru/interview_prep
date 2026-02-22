@@ -82,3 +82,7 @@
 15. LC 1481. Least Number of Unique Integers after K Removals
     a. Brute force - heap and map
       i. TC: O(nlog(n)), SC: O(n)
+
+16. LC 1529. Minimum Suffix Flips
+    a. linear traversal with flips count.
+      i. TC: O(n)), SC: O(1)
