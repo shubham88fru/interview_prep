@@ -479,6 +479,15 @@ public class JavaStreamsInterviewQuestions {
         */
         Random random = new Random();
         Stream<Integer> randomNumbers = Stream.generate(random::nextInt);
+
+        /*
+            65. Given a list of strings, write a program to find and print
+             the index with the maximum number of vowels using Java Stream API using stream
+         */
+        Optional<Integer> maxVowelIndex = IntStream.range(0, strs.size())
+                .boxed() // Box to Stream<Integer> to use Comparator
+                .max(Comparator.comparingLong(i -> countVowels(strs.get(i)))) //
+                .map(index -> index); // Retrieve the index
     }
 
     private static boolean isPrime(int num) {
@@ -490,6 +499,12 @@ public class JavaStreamsInterviewQuestions {
         }
 
         return true;
+    }
+
+    private static long countVowels(String s) {
+        return s.toLowerCase().chars()
+                .filter(c -> "aeiou".indexOf(c) != -1) //
+                .count();
     }
 }
 
