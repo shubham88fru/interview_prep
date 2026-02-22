@@ -56,3 +56,10 @@
         i. TC: O(m+n), SC: O(1)
     4. Binary search
         i. TC: O(log(m*n)), SC: O(1)
+
+11. LC 9. Palindrome number
+    a. Brute
+        i. Convert the number to string, reverse and then compare. -> O(n), O(n)
+    b. Math reverse using % and / -> O(log(n)) where its log to base 10
+    c. Optimal
+        i. Same as b. but with early return. Only do till og x is > rev, see lc editorial.
