@@ -24,3 +24,15 @@
 5. LC 143. Reorder List
     1. Optimal - half, reverse, merge
         i. TC: O(n), SC: O(1)
+
+6. LC 141. Linked List Cycle
+    1. Brute - hashset
+        i. TC: O(n), SC: O(n)
+    2. Optimal - f and s pointers, and tortoise and hare algo.
+        i. TC: O(n), SC: O(1)
+
+7. LC 142. Linked List Cycle II
+    1. Brute - hashset
+        i. TC: O(n), SC: O(n)
+    2. Optimal - f and s pointers, and tortoise and hare algo.
+        i. TC: O(n), SC: O(1)
