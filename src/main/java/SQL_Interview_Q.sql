@@ -206,7 +206,7 @@ Order by descending.
 */
 select province_name, COUNT(*) as cnt
 FROM province_names pn
-         JOIN patients p ON pn.province_id = p.province_id
+JOIN patients p ON pn.province_id = p.province_id
 GROUP BY province_name
 ORDER BY cnt DESC;
 
