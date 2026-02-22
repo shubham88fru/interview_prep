@@ -65,6 +65,7 @@ public class JavaStreamsInterviewQuestions {
             in a list of strings using Java Stream API.
         */
         strs.stream().max((s1, s2) -> s1.length() - s2.length()).orElse("");
+        strs.stream().sorted((s1, s2) -> s2.length() - s1.length()).findFirst().orElse("");
 
         /*
             10. Given a list of integers, write a program to find
@@ -345,7 +346,7 @@ public class JavaStreamsInterviewQuestions {
             49. Write a program to find the kth largest element
              in a list of integers using Java Stream API.
         */
-        ints.stream().sorted(Collections.reverseOrder()).distinct().skip(2).findFirst().orElse(-1);
+        ints.stream().sorted(Collections.reverseOrder()).distinct().skip(k-1).findFirst().orElse(-1);
 
         /*
             50. Given a list of integers, write a program to find and print
