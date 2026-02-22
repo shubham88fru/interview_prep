@@ -36,3 +36,7 @@
         i. TC: O(n), SC: O(n)
     2. Optimal - f and s pointers, and tortoise and hare algo.
         i. TC: O(n), SC: O(1)
+
+8. LC 387. First Unique Character in a String
+    1. Optimal - freq aray and 2 pass.
+        i. TC: O(n), SC: O(1)
