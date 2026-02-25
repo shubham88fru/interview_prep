@@ -476,3 +476,9 @@
         i. TC: O(2ˆn*(nlog(n)), SC: O(n)
     b. Optimal - smart dfs
         i. TC: O(n*2ˆn), SC: O(n)
+
+73. LC 173. Binary Search Tree Iterator
+    a. Use list
+        i. next: O(1), hasNext: O(1), SC: O(n)
+    b. Use stack
+        i. TC: ~O(1), SC: O(h)
