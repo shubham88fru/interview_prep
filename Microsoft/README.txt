@@ -462,3 +462,11 @@
         i. TC: O(m*n), SC: O(m*n)
     c. bottom up dp ??
         i. TC: O(m*n), SC: O(m*n)
+
+72. LC 74. Search a 2D Matrix
+    a. Brute - linear search
+        i. TC: O(m*n), SC: O(1)
+    b. smart search from top-right corner
+        i. TC: O(m+n), SC: O(1)
+    c. binary search
+        i. TC: O(log(m*n)), SC: O(1)
