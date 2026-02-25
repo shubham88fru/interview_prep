@@ -428,7 +428,9 @@
     2. Slightly better (only do when interviewer aks, easy to screw) - two stacks. One og, one for min. Reduces redundant store of min.
         i. TC: O(1), SC: O(n)
 
-66. LC 155. Min Stack--- (largest number)
+66. LC 179. Largest Number
+    1. Comparator
+        i. TC: O(nlog(n)), SC: O(n)
 
 67. LC 73. Set Matrix Zeroes
     a. Brute
