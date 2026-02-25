@@ -470,3 +470,9 @@
         i. TC: O(m+n), SC: O(1)
     c. binary search
         i. TC: O(log(m*n)), SC: O(1)
+
+72. LC 90. Subsets II
+    a. Brute - pick/not pick
+        i. TC: O(2ˆn*(nlog(n)), SC: O(n)
+    b. Optimal - smart dfs
+        i. TC: O(n*2ˆn), SC: O(n)
