@@ -428,10 +428,9 @@
     2. Slightly better (only do when interviewer aks, easy to screw) - two stacks. One og, one for min. Reduces redundant store of min.
         i. TC: O(1), SC: O(n)
 
-
 66. LC 155. Min Stack--- (largest number)
 
-17. LC 73. Set Matrix Zeroes
+67. LC 73. Set Matrix Zeroes
     a. Brute
         i. Using a separate copy matrix --> O(m*n), O(m*n)
     b. Two arrays/set to track rows/cols
@@ -441,7 +440,17 @@
         i. use first row and col to track which rows/cols
            need to marked zero --> O(m*n), O(1)
 
-23. LC 16. 3 Sum closest
+68. LC 16. 3 Sum closest
     a. Brute
         i. Three nested for-loops --> O(nˆ3)
     b. The optimal sort+3pointer approach of 3 sum problem -> O(nlog(n) + nˆ2)
+
+69. LC 485. Max Consecutive Ones
+    a. linear with two pointers
+        i. TC: O(n), SC: O(1)
+
+70. LC 63. Unique Paths II
+    a. DFS/backtracking + Memo
+        i. TC: O(m*n), SC: O(m*n)
+    b. bottom up DP ??
+        i. TC: O(m*n), SC: O(m*n)
