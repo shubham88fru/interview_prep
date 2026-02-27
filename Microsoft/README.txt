@@ -501,6 +501,12 @@
     2. Optimal - Recursion + memo
         1. TC: O(m*n), SC: O(m*n)
 
-74. ---median of two sorted arrays----
+77. 295. Find Median from Data Stream
+    1. Brute - Sort each time and find middle
+        1. TC: O(nlog(n)), SC: O(1)
+    2. Optimal - Two heaps. Add to maxh first, counterintuitive add to maxh, maxh.size() <= minH.size()+1, minH.size()<=maxH.size()
+        1. TC: O(log(n)), SC: O(1)
+        
 75. ---76. minimum window substring---
+75. ---LFU cache---
 75. ---N queens---
