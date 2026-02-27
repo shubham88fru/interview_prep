@@ -519,6 +519,12 @@
     2. Optimal - smart calculation, rsum, colsum etc.
        i. TC: O(1), SC: O(2n)
 
+79. LC 349. Intersection of Two Arrays
+    1. sorting, two pointer and set
+       i. TC: O(nlog(n) + mlog(m)), SC: O(min(m,n))
+    2. one set
+       i. TC: O(m+n), SC: O(n)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---76. minimum window substring---
 75. ---LFU cache---
