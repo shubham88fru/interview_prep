@@ -484,3 +484,23 @@
         i. next: O(1), hasNext: O(1), SC: O(n)
     b. Use stack
         i. TC: ~O(1), SC: O(h)
+
+74. LC 210. Course Schedule II
+    1. BFS/Kahn's algo/Toposort
+        1. TC: O(V+E), SC: O(V+E) ??
+    2. If asks for more approach say we can try DFS instead of BFS.
+
+75. LC 207. Course Schedule
+    1. BFS/Kahn's algo/Toposort
+        1. TC: O(V+E), SC: O(V+E) ??
+    2. If asks for more approach say we can try DFS instead of BFS.
+
+76. LC 221. Maximal Square
+    1. Brute - check for each one without caching
+        1. TC: O((m*n)ˆ2), SC: O(1)
+    2. Optimal - Recursion + memo
+        1. TC: O(m*n), SC: O(m*n)
+
+74. ---median of two sorted arrays----
+75. ---76. minimum window substring---
+75. ---N queens---
