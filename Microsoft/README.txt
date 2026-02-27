@@ -506,7 +506,10 @@
         1. TC: O(nlog(n)), SC: O(1)
     2. Optimal - Two heaps. Add to maxh first, counterintuitive add to maxh, maxh.size() <= minH.size()+1, minH.size()<=maxH.size()
         1. TC: O(log(n)), SC: O(1)
-        
+
+
+76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---76. minimum window substring---
 75. ---LFU cache---
 75. ---N queens---
+75. --Burst ballons--- (Maybe ignore)
