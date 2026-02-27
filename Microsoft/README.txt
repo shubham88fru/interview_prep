@@ -519,17 +519,23 @@
     2. Optimal - smart calculation, rsum, colsum etc.
        i. TC: O(1), SC: O(2n)
 
-79. LC 349. Intersection of Two Arrays
+80. LC 349. Intersection of Two Arrays
     1. sorting, two pointer and set
        i. TC: O(nlog(n) + mlog(m)), SC: O(min(m,n))
     2. one set
        i. TC: O(m+n), SC: O(n)
 
-79. LC 387. First Unique Character in a String
+81. LC 387. First Unique Character in a String
     1. Brute - Check for each char.
        i. TC: O(nˆ2), SC: O(1)
     2. Optimal - frequency array
        i. TC: O(n), SC: O(1)
+
+82. LC 496. Next Greater Element I
+    1. Brute - map and for each iterate
+       i. TC: O(nˆ2), SC: O(n)
+    2. Optimal - store nge using stack in map and then iterate once.
+       i. TC: O(n1+n2), SC: O(n2)
 
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---76. minimum window substring---
