@@ -501,12 +501,17 @@
     2. Optimal - Recursion + memo
         1. TC: O(m*n), SC: O(m*n)
 
-77. 295. Find Median from Data Stream
+77. LC 295. Find Median from Data Stream
     1. Brute - Sort each time and find middle
         1. TC: O(nlog(n)), SC: O(1)
     2. Optimal - Two heaps. Add to maxh first, counterintuitive add to maxh, maxh.size() <= minH.size()+1, minH.size()<=maxH.size()
         1. TC: O(log(n)), SC: O(1)
 
+78. LC 334. Increasing Triplet Subsequence
+    1. Brute - 3 loops
+       i. TC: O(nˆ3), SC: O(1)
+    2. Optimal - linear scan using first and second
+       i. TC: O(n), SC: O(1)
 
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---76. minimum window substring---
