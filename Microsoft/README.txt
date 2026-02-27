@@ -525,6 +525,12 @@
     2. one set
        i. TC: O(m+n), SC: O(n)
 
+79. LC 387. First Unique Character in a String
+    1. Brute - Check for each char.
+       i. TC: O(nˆ2), SC: O(1)
+    2. Optimal - frequency array
+       i. TC: O(n), SC: O(1)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---76. minimum window substring---
 75. ---LFU cache---
