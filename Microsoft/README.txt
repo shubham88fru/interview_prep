@@ -513,6 +513,12 @@
     2. Optimal - linear scan using first and second
        i. TC: O(n), SC: O(1)
 
+79. LC 348. Design Tic-Tac-Toe
+    1. Brute - check row, col, ldiag, rdiag in each call
+       i. TC: O(n), SC: O(nˆ2)
+    2. Optimal - smart calculation, rsum, colsum etc.
+       i. TC: O(1), SC: O(2n)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---76. minimum window substring---
 75. ---LFU cache---
