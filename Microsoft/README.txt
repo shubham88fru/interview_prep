@@ -545,6 +545,12 @@
     1. Optimal - sort + two pointer
         i. TC: O(nlog(n)), SC: O(1)
 
+85. LC 974. Subarray Sums Divisible by K
+    1. Brute - generate all sub array and check
+        i. TC: O(nˆ2), SC: O(1)
+    2. Optimal - prefix sum mod and hashmap
+        i. TC: O(n), SC: O(k); n is size of array and k is num to be divided by.
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
