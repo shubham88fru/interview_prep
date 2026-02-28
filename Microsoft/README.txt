@@ -557,6 +557,10 @@
     2. Optimal - kmp algo
         i. TC: O(n), SC: O(m);
 
+86. LC 994. Rotting Oranges
+    1. Multi source BFS - careful of the edge case when no fresh orange in grid.
+        i. TC: O(m*n), SC: O(m*n)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
