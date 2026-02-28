@@ -557,7 +557,7 @@
     2. Optimal - kmp algo
         i. TC: O(n), SC: O(m);
 
-86. LC 994. Rotting Oranges
+87. LC 994. Rotting Oranges
     1. Multi source BFS - careful of the edge case when no fresh orange in grid.
         i. TC: O(m*n), SC: O(m*n)
 
