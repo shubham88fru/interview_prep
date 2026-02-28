@@ -565,6 +565,10 @@
     1. Inorder to BST
         i. TC: O(n), SC: O(n)
 
+89. LC 1413. Minimum Value to Get Positive Step by Step Sum
+    1. Linear traversal with running sum
+        i. TC: O(n), SC: O(1)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
