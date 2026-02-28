@@ -541,8 +541,13 @@
     1. Sliding window
         i. TC: O(n), SC: O(1)
 
+84. LC 881. Boats to Save People
+    1. Optimal - sort + two pointer
+        i. TC: O(nlog(n)), SC: O(1)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
+75. ---special binary string---
 75. ---76. minimum window substring---
-75. ---LFU cache---
-75. ---N queens---
+75. ---LFU cache--- (maybe ignore)
+75. ---N queens--- (maybe ignore)
 75. --Burst ballons--- (Maybe ignore)
