@@ -551,6 +551,12 @@
     2. Optimal - prefix sum mod and hashmap
         i. TC: O(n), SC: O(k); n is size of array and k is num to be divided by.
 
+86. LC 28. Find the Index of the First Occurrence in a String
+    1. Brute - check starting each char
+        i. TC: O(n*m), SC: O(1); n length of s1, m length of s2
+    2. Optimal - kmp algo
+        i. TC: O(n), SC: O(m);
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
