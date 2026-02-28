@@ -561,6 +561,10 @@
     1. Multi source BFS - careful of the edge case when no fresh orange in grid.
         i. TC: O(m*n), SC: O(m*n)
 
+88. LC 1382. Balance a Binary Search Tree
+    1. Inorder to BST
+        i. TC: O(n), SC: O(n)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
