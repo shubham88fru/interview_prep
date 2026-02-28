@@ -569,6 +569,10 @@
     1. Linear traversal with running sum
         i. TC: O(n), SC: O(1)
 
+90. LC 2385. Amount of Time for Binary Tree to Be Infected
+    1. Parent links and then BFS
+        i. TC: O(n), SC: O(n)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
