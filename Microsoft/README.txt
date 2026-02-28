@@ -560,6 +560,7 @@
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
+75. ---KMP algo---
 75. ---LFU cache--- (maybe ignore)
 75. ---N queens--- (maybe ignore)
 75. --Burst ballons--- (Maybe ignore)
