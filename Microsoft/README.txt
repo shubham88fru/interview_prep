@@ -537,6 +537,10 @@
     2. Optimal - store nge using stack in map and then iterate once.
        i. TC: O(n1+n2), SC: O(n2)
 
+83. LC 643. Maximum Average Subarray I
+    1. Sliding window
+        i. TC: O(n), SC: O(1)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---76. minimum window substring---
 75. ---LFU cache---
