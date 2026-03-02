@@ -581,6 +581,12 @@
     1. suboptimal - using stack
         i. TC: O(n), SC: O(n)
 
+93. LC 76. Minimum Window Substring
+    1. Brute - generate all substrings and check
+        i. TC: O(nˆ2), SC: O(nˆ2)
+    2. Optimal - sliding window
+        i. TC: O(m+n), SC: (m+n)
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
