@@ -587,6 +587,25 @@
     2. Optimal - sliding window
         i. TC: O(m+n), SC: (m+n)
 
+94. LC 252. Meeting Rooms
+    1. Brute - take each interval and check with every other
+        whether it overlaps or not.
+        i. TC: O(nˆ2), SC: O(1)
+    2. Optimal - sort and check if overlapping with prev
+        i. TC: O(nlog(n)), SC: (log(n)) --> sorting internally uses space.
+
+94. LC 253. Meeting Rooms II
+    1. Sol 1: Sort + Heap - keep track of end times
+        i. TC: O(nlog(n)), SC: O(n)
+    2. Sol 2: Sort end and start times separately ?? I would not talk about this sol first.
+        i. TC: O(nlog(n)), SC: (2n)
+
+
+
+Integer to english word
+
+
+
 76. --4. Median of Two Sorted Arrays--- (code the optimal two pointer and binary search approach)
 75. ---special binary string---
 75. ---76. minimum window substring---
